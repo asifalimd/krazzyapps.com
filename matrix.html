@@ -11,6 +11,9 @@
 
     <!-- Le styles -->
     <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/jquery-1.6.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
+    <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
     <style type="text/css">
       body {
         padding-top: 20px;
@@ -70,6 +73,7 @@
         <ul class="nav nav-pills pull-right">
           <li ><a href="index.html">Home</a></li>
           <li class="active"><a href="matrix.html">Game</a></li>
+           <li><a href="matrix.html#screens">Screens</a></li>
           <li><a href="matrix.html#faq">FAQ</a></li>
            <li><a href="matrix.html#support">Support</a></li>
         </ul>
@@ -147,7 +151,38 @@
 
 </div>
 
+<div class="row-fluid marketing">
+        <A name="screens"></a><h3>Screen Shots</h3>
 
+          <h4>iPhone</h4>
+            <a href="img/iphone/1.png" rel="prettyPhoto['iPhone']"><img src="img/iphone/1.png" height="144" width="96"></a>
+            <a href="img/iphone/2.png" rel="prettyPhoto['iPhone']"><img src="img/iphone/2.png" height="144" width="96"><a/>
+            <a href="img/iphone/3.png" rel="prettyPhoto['iPhone']"><img src="img/iphone/3.png" height="144" width="96"></a>
+            <a href="img/iphone/4.png" rel="prettyPhoto['iPhone']"><img src="img/iphone/4.png" height="144" width="96"></a>
+            <a href="img/iphone/5.png" rel="prettyPhoto['iPhone']"><img src="img/iphone/5.png" height="144" width="96"><a/> <br/> <br />
+            <a href="img/iphone/6.png" rel="prettyPhoto['iPhone']"><img src="img/iphone/6.png" height="144" width="96"></a>
+            <a href="img/iphone/7.png" rel="prettyPhoto['iPhone']"><img src="img/iphone/7.png" height="144" width="96"><a/>
+            <a href="img/iphone/8.png" rel="prettyPhoto['iPhone']"><img src="img/iphone/8.png" height="144" width="96"></a>
+            <a href="img/iphone/9.png" rel="prettyPhoto['iPhone']"><img src="img/iphone/9.png" height="144" width="96"></a>
+       
+
+<!--         <h4>iPhone Retina</h4>
+            <a href="img/retina/1.png" rel="prettyPhoto['retina']"><img src="img/retina/1.png" height="144" width="96"></a>
+            <a href="img/retina/2.png" rel="prettyPhoto['retina']"><img src="img/retina/2.png" height="144" width="96"><a/>
+            <a href="img/retina/3.png" rel="prettyPhoto['retina']"><img src="img/retina/3.png" height="144" width="96"></a>
+
+          -->
+
+        <h4>iPad</h4>
+            <a href="img/ipad/1.jpg" rel="prettyPhoto['ipad']"><img src="img/ipad/1.jpg" height="144" width="96"></a>
+            <a href="img/ipad/2.jpg" rel="prettyPhoto['ipad']"><img src="img/ipad/2.jpg" height="144" width="96"><a/>
+            <a href="img/ipad/3.jpg" rel="prettyPhoto['ipad']"><img src="img/ipad/3.jpg" height="144" width="96"></a>            
+            <a href="img/ipad/4.jpg" rel="prettyPhoto['ipad']"><img src="img/ipad/4.jpg" height="144" width="96"></a> 
+            <a href="img/ipad/5.jpg" rel="prettyPhoto['ipad']"><img src="img/ipad/5.jpg" height="144" width="96"><a/>
+            <a href="img/ipad/6.jpg" rel="prettyPhoto['ipad']"><img src="img/ipad/6.jpg" height="144" width="96"></a>            
+            <a href="img/ipad/7.jpg" rel="prettyPhoto['ipad']"><img src="img/ipad/7.jpg" height="144" width="96"></a>
+
+      </div>
    
 
 <div class="row-fluid marketing">
@@ -191,6 +226,11 @@
     </div> <!-- /container -->
 
 
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto();
+  });
+</script>
 
   </body>
 </html>
